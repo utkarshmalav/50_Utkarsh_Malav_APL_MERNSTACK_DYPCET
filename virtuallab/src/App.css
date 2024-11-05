@@ -1,0 +1,162 @@
+/* Main App Styling */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-header h1 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.App-header p {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.content {
+  display: flex;
+  margin: 20px;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #ddd;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: left;
+  font-size: 18px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Completed checkmark styling */
+.sidebar ul li .completed {
+  color: green;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 1px solid #ddd;
+}
+
+.main-content h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main-content .info {
+  text-align: left;
+}
+
+.main-content .info h4 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.main-content .info p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.main-content .info ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.main-content .info ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.main-content .info ol {
+  padding-left: 20px;
+  list-style-type: decimal;
+}
+
+.main-content pre {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  overflow: auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Highlighted Completion Percentage */
+.sidebar p.completed {
+  background-color: #28a745; /* Green background for 100% completion */
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.completion-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745; /* Green for completion */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.completion-button:hover {
+  background-color: #218838;
+}
